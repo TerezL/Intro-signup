@@ -1,0 +1,117 @@
+body {
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  font-weight: 700;
+}
+
+.pricebutton {
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  padding: 0.7rem;
+  color: white;
+  
+  
+}
+.pricebutton span{
+  font-weight: 200;
+}
+
+.submitbutton{
+  width: 95%;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  margin: 0.5rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.inpt {
+  width: 95%;
+  margin: 0.8rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  border: solid 1px hsl(246, 25%, 77%);
+  font-weight: 600;
+  font-size: 14px;
+}
+.formbox {
+  width: 80%;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+.terms span{
+  color: hsl(0, 100%, 74%);
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-image: url(./images/icon-error.svg);
+}
+.errormsg{
+  font-size: 12px;
+  text-align: right;
+  width: 95%;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-image: url(./images/bg-intro-mobile.png);
+  }
+  main{
+    width: 100%;
+    
+  }
+  h1{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .maintext{
+    text-align: center;
+    width: 70%;
+    margin: 0.4rem auto;
+  }
+  .formbox{
+    margin: 0.8rem auto;
+    width: 70%;
+  }
+  .pricebutton{
+    width: 70%;
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.7rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .maintext{
+    text-align: left;
+  }
+  .formbox {
+    margin-top: 0.5rem;
+  }
+  
+}
